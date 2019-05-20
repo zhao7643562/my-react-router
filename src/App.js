@@ -1,26 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+// import { Route } from 'react-router-dom';
+import Nav from './Components/nav/Nav';
+import "./styles/app.css"
+class c extends Component {
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    render() {
+        return (
+            <div className="app">
+                <Nav></Nav>
+                {/* 高阶组件 由一个组件返回一个组件 */}
+                {/* <Route path="/" component={Nav}></Route> */}
+                <div className="content">
+                    {this.props.children}
+                </div>
+
+                {/* 显示组件内容 */}
+            </div>
+        )
+    }
+
 }
 
-export default App;
+export default c;
