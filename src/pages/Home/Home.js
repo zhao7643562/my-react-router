@@ -19,7 +19,7 @@ class Home extends Component {
 
 
   render() {
-    console.log(this.props.location)
+    // console.log(this.props.location)
     return (
       <div className="home">
         <h4>发表话题:</h4>

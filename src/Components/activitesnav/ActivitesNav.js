@@ -1,10 +1,11 @@
-import React,{Component} from 'react';
+import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom'
 import './activitiesnav.css'
-class ActivitesNav extends Component{
+class ActivitesNav extends Component {
 
-render(){
-  return(
+  render() {
+    return (
+
       <div className="activities-nav">
         <NavLink to="/activities/recommended">推荐</NavLink>
         <NavLink to="/activities/all">综合</NavLink>

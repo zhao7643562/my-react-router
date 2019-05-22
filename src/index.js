@@ -16,6 +16,8 @@ import Login from './pages/Login/Login'
 import Topics from './pages/Topics/Topics'
 import Article from './pages/Article/Article'
 
+import NoMatch from './pages/NoMatch/NoMatch'
+
 import PrivateRoute from './Components/PrivateRoute'
 //HashRouter  BrowserRouter
 //哈希路由    浏览器路由
@@ -35,7 +37,9 @@ render(
                 <PrivateRoute path="/topics" component={Topics}></PrivateRoute>
                 <Route path="/login" component={Login}></Route>
                 <Route path="/article/:id" component={Article}></Route>
-                <Redirect to="/"></Redirect>
+                {/* <Redirect to="/"></Redirect> */}
+                <Route path="/error.html" component={NoMatch}></Route>
+                <Redirect to="/error.html"></Redirect>
             </Switch>
         </App>
 

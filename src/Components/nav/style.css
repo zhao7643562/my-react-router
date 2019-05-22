@@ -4,14 +4,19 @@
     background-color: #fff;
   
 }
-.nav a{
+.nav span{
     margin: 0 20px;
+    color: #71777c;
+    cursor: pointer;
+}
+.nav span.active{
+    color: #007fff;
 }
 
-.logo{
+.nav span.logo{
     font-size: 18px;
     font-weight: bold;
-    color: #71777c;
+    /* color: #71777c;
     margin: 0 20px;
-    cursor: pointer;
+    cursor: pointer; */
 }
